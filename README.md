@@ -12,11 +12,11 @@ To get started, install [Expo](https://expo.io/learn) and follow the installatio
 
 Android
 
-![demo-android](https://github.com/ricardocanelas/reactnd-project-flashcards/screen_capture-android.gif)
+![demo-android](https://github.com/ricardocanelas/reactnd-project-flashcards/blob/master/screen_capture-android.gif)
 
 iOS
 
-![demo-ios](https://github.com/ricardocanelas/reactnd-project-flashcards/screen_capture-ios.gif)
+![demo-ios](https://github.com/ricardocanelas/reactnd-project-flashcards/blob/master/screen_capture-ios.gif)
 
 
 ## Installation and Running the Project
