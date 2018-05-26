@@ -1,8 +1,19 @@
 import React, { Component } from 'react'
 import { View, Text, TextInput } from 'react-native'
 import { connect } from 'react-redux'
+import styled from 'styled-components'
 import Button from '../components/Button'
 import actions from '../actions'
+
+const Input = styled.TextInput`
+padding: 5px;
+text-align: center;
+font-size: 14px;
+border: 1px solid #ccc;
+height: 50px;
+width: 300px;
+margin: 10px;
+`
 
 class CardCreate extends Component {
     state = {
@@ -23,8 +34,7 @@ class CardCreate extends Component {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Question</Text>
-                <TextInput
-                    style={{height: 40, width: 270, textAlign: 'center', fontSize: 15}}
+                <Input
                     onChangeText={(question) => this.setState({...this.state, question})}
                     value={this.state.question}
                 />
@@ -32,8 +42,7 @@ class CardCreate extends Component {
                 <View style={{ height: 40 }} />
 
                 <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Answer</Text>
-                <TextInput
-                    style={{height: 40, width: 270, textAlign: 'center', fontSize: 14}}
+                <Input
                     onChangeText={(answer) => this.setState({...this.state, answer})}
                     value={this.state.answer}
                 />

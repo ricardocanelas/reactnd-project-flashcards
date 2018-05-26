@@ -9,11 +9,11 @@ import actions from '../actions'
 
 class DeckList extends Component {
     state = {
-        ready: false
+        ready: false,
     }
 
     static navigationOptions = {
-        title:'Listagem'
+        title: 'Decks'
     }
 
     componentDidMount() {
@@ -71,8 +71,8 @@ class DeckList extends Component {
 
                 {this.renderList()}
 
-                <Button onPress={this.gotoDeckCreate} theme='sidebar'>
-                    <Text style={{ textAlign: 'center' }}>
+                <Button onPress={this.gotoDeckCreate} theme='full'>
+                    <Text style={{ textAlign: 'center', color: 'white' }}>
                         Create a New Deck
                     </Text>
                 </Button>

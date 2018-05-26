@@ -10,6 +10,13 @@ To get started, install [Expo](https://expo.io/learn) and follow the installatio
 
 ## Demostration
 
+Android
+
+![demo-android](https://github.com/ricardocanelas/reactnd-project-flashcards/screen_capture-android.gif)
+
+iOS
+
+![demo-ios](https://github.com/ricardocanelas/reactnd-project-flashcards/screen_capture-ios.gif)
 
 
 ## Installation and Running the Project
@@ -24,3 +31,10 @@ To install and launch the project.
 * install `Expo` from Google Play Store (Android) or App Store (iOS) on mobile device
 * use the QR barcode scanner in the Expo app and scan the barcode from terminal with mobile device
 * alternatively, enter the given adddress into the Expo app's search bar
+
+# Platforms Tested
+
+This App has been tested on
+
+* iOS 11, iPhone 7 (Physical device, via Expo)
+* Android 7.10 - API25, Google Nexus 5X (Simulator)

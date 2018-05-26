@@ -6,12 +6,12 @@ function Button (props) {
 
     let Button
 
-    if (props.theme && props.theme === 'sidebar') {
+    if (props.theme && props.theme === 'full') {
         Button = styled.TouchableOpacity`
-        padding: 10px;
+        padding: 20px;
         border: 1px solid #ccc;
         margin: 0px;
-        background-color: orangered;
+        background-color: #162a5c;
         border-radius: 0;
         `
     } else {

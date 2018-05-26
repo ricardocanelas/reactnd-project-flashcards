@@ -11,13 +11,30 @@ font-size: 24px;
 padding: 16px;
 `
 
+const Input = styled.TextInput`
+padding: 5px;
+text-align: center;
+font-size: 14px;
+border: 1px solid #ccc;
+height: 50px;
+width: 300px;
+margin: 10px;
+`
+
 class DeckCreate extends Component {
     state = {
         name: ''
     }
 
     static navigationOptions = {
-        title:'Create a new deck',
+        title: 'Create Deck',
+        headerStyle: {
+            backgroundColor: '#162a5c',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
     }
 
     submit = () => {
@@ -37,8 +54,7 @@ class DeckCreate extends Component {
         return (
             <View style={{flex:1, justifyContent: 'center', alignItems: 'center' }}>
                 <Title>What is the title of your new deck?</Title>
-                <TextInput
-                    style={{height: 50, width: 270, textAlign: 'center'}}
+                <Input
                     onChangeText={(name) => this.setState({name})}
                     value={this.state.name}
                 />

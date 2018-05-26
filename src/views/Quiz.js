@@ -72,12 +72,12 @@ class Quiz extends Component {
             screen: hasMoreQuestions ? 'question' : 'result',
         }))
         if(!hasMoreQuestions) {
-            this.saveScore()
+            this.saveScore(finalScore)
         }
     }
 
-    saveScore = () => {
-        this.props.updateScore(this.props.deck.id, this.state.finalScore)
+    saveScore = (finalScore) => {
+        this.props.updateScore(this.props.deck.id, finalScore)
         resetNotification()
     }
 
@@ -146,7 +146,10 @@ class Quiz extends Component {
                             </Text>
                         </Button>
                         <Button>
-                            <Text onPress={() => this.props.navigation.navigate('Home')}>
+                            <Text onPress={() => this.props.navigation.navigate('DeckDetails', {
+                                deckId: deck.id,
+                                deckLabel: deck.label,
+                            })}>
                                 Back to Deck
                             </Text>
                         </Button>
