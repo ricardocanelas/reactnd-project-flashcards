@@ -9,7 +9,10 @@
     "react-navigation": "^2.0.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.2.0",
     "styled-components": "^3.2.6"
+  },
+  "scripts": {
+    "start": "exp start",
+    "start-tunnel": "exp start --tunnel"
   }
 }
