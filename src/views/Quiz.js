@@ -49,7 +49,7 @@ class Quiz extends Component {
     }
 
     seeAnswer = () => {
-        this.setState({ ...this.state, screen: 'answer' })
+        this.setState((prevState) => ({ ...prevState, screen: 'answer' }))
     }
 
     itCorrects = () => {

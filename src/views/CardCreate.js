@@ -35,7 +35,7 @@ class CardCreate extends Component {
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Question</Text>
                 <Input
-                    onChangeText={(question) => this.setState({...this.state, question})}
+                    onChangeText={(question) => this.setState((prevState) => ({...prevState, question}))}
                     value={this.state.question}
                 />
 
@@ -43,7 +43,7 @@ class CardCreate extends Component {
 
                 <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Answer</Text>
                 <Input
-                    onChangeText={(answer) => this.setState({...this.state, answer})}
+                    onChangeText={(answer) => this.setState((prevState) => ({...prevState, answer}))}
                     value={this.state.answer}
                 />
                 <Button onPress={this.submit}>
