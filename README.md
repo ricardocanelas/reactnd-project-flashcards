@@ -1,3 +1,5 @@
+[![REACT nanodegree](https://img.shields.io/badge/udacity-REACTND-02b3e4.svg?style=flat)](https://www.udacity.com/course/react-nanodegree--nd019)
+
 # Flashcards - Udacity Project
 
 Flashcards project for Udacity React Nanodegree program, React Native course.
